@@ -48,7 +48,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: |
-        dir ${{ github.workspace }}
+        ls ${{ github.workspace }}
         cd autoBuild\mac
         bash autoMac.sh
       shell: bash
