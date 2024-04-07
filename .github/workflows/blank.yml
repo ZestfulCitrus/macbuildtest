@@ -51,7 +51,7 @@ jobs:
         dir ${{ github.workspace }}
         cd autoBuild\mac
         bash autoMac.sh
-      shell: /bin/bash
+      shell: bash
   upload:
     if: github.event.pull_request.merged == true
     needs: build
